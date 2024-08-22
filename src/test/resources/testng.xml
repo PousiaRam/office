@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Tests" verbose="5">
-  <test name="Test1">
-    <classes>
-      <class name="Indbazaar.SeleniumJava.SampleTestNgTest"/>
-    </classes>
-  </test>  
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tests" verbose="5" thread-count="5" >
+	<test name="Test1">
+		<parameter name="url" value="https://www.google.com/"></parameter>
+
+		<classes>
+			<class name="base.Driverinitilization" />
+
+		</classes>
+	</test>
+
+
 </suite>
